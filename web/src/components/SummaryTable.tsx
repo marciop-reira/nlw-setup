@@ -18,9 +18,7 @@ type Summary = {
 
 export function SummaryTable() {
   const [summary, setSummary] = useState<Summary>([]);
-
-  console.log(summary)
-
+  
   useEffect(() => {
     getSummary();
   }, []);
